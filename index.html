@@ -14,20 +14,20 @@
   <body class="bg-black text-white">
     <div class="flex md:container mx-auto my-4">
       <div class="first w-16 md:w-[70%]">
-        <div class="logo invert my-4">
-          <svg
-            viewBox="0 0 24 24"
-            aria-hidden="true"
-            class="w-8 m-auto r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-yc9v9c r-vlxjld r-16y2uox r-8kz0gk"
-          >
-            <g>
-              <path
-                d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"
-              ></path>
-            </g>
-          </svg>
-        </div>
-        <div class="sidebar flex md:items-end flex-col">
+        <div class="sidebar flex md:items-end flex-col sticky top-0">
+          <div class="logo invert my-4 self-start mx-2 md:mx-16">
+            <svg
+              viewBox="0 0 24 24"
+              aria-hidden="true"
+              class="w-8 m-auto r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-yc9v9c r-vlxjld r-16y2uox r-8kz0gk"
+            >
+              <g>
+                <path
+                  d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"
+                ></path>
+              </g>
+            </svg>
+          </div>
           <!-- <span class="material-symbols-outlined"> add </span> -->
           <ul
             class="flex flex-col text-2xl space-y-3 md:px-11 font-bold w-full"
@@ -103,16 +103,21 @@
             <li>
               <div class="button w-full text-center my-4">
                 <button
-                  class="bg-blue-600 px-20 text-xl rounded-full py-3 text-white"
+                  class="hidden md:block bg-[#1d9bf0] px-20 text-xl rounded-full py-3 text-white"
                 >
-                  <span class="hidden md:block">Post</span>
+                  Post
+                </button>
+                <button
+                  class="md:hidden bg-[#1d9bf0] px-4 text-xl rounded-full py-3 text-white"
+                >
+                  <span class="material-symbols-outlined"> edit </span>
                 </button>
               </div>
             </li>
           </ul>
         </div>
       </div>
-      <div class="second w-full border-[1px] border-x-white border-y-black">
+      <div class="second w-full border-[1px] border-x-gray-600 border-y-black">
         <div class="top flex p-3 relative">
           <div
             class="absolute w-16 h-1 rounded-full bg-blue-500 bottom-0 left-[19%] z-10"
@@ -169,8 +174,54 @@
             </div>
           </div>
         </div>
-        <hr />
+
         <div class="posts">
+          <div class="post border-[1px] border-y-gray-600 border-x-0">
+            <div class="flex">
+              <div class="image m-4">
+                <img
+                  class="w-16"
+                  src="https://pbs.twimg.com/profile_images/1701399952554102784/sCf97uru_400x400.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="content my-3">
+                <span
+                  class="font-bold hover:underline text-white cursor-pointer"
+                >
+                  non aesthetic things
+                </span>
+                <span class="text-gray-500">@PictureFolder . 6h</span>
+                <div>legend</div>
+                <div class="postimg m-4 ml-0">
+                  <img
+                    class="rounded-xl"
+                    src="https://pbs.twimg.com/media/GEmJJcqbUAAGq-G?format=jpg&name=small"
+                    alt=""
+                  />
+                </div>
+                <div class="icons flex justify-between mx-3 text-gray-600">
+                  <div class="icon flex items-center justify-center">
+                    <span class="material-symbols-outlined"> chat_bubble </span>
+                    1k
+                  </div>
+                  <div class="icon flex items-center justify-center">
+                    <span class="material-symbols-outlined"> repeat </span>
+                    1k
+                  </div>
+                  <div class="icon flex items-center justify-center">
+                    <span class="material-symbols-outlined"> Favorite </span>
+                    1k
+                  </div>
+                  <div class="icon flex items-center justify-center">
+                    <span class="material-symbols-outlined"> bar_chart </span>
+                    1k
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
           <div class="post">
             <div class="flex">
               <div class="image m-4">
@@ -216,7 +267,7 @@
               </div>
             </div>
           </div>
-          <hr />
+
           <div class="post">
             <div class="flex">
               <div class="image m-4">
@@ -262,7 +313,7 @@
               </div>
             </div>
           </div>
-          <hr />
+
           <div class="post">
             <div class="flex">
               <div class="image m-4">
@@ -308,53 +359,6 @@
               </div>
             </div>
           </div>
-          <hr />
-          <div class="post">
-            <div class="flex">
-              <div class="image m-4">
-                <img
-                  class="w-16"
-                  src="https://pbs.twimg.com/profile_images/1701399952554102784/sCf97uru_400x400.jpg"
-                  alt=""
-                />
-              </div>
-              <div class="content my-3">
-                <span
-                  class="font-bold hover:underline text-white cursor-pointer"
-                >
-                  non aesthetic things
-                </span>
-                <span class="text-gray-500">@PictureFolder . 6h</span>
-                <div>legend</div>
-                <div class="postimg m-4 ml-0">
-                  <img
-                    class="rounded-xl"
-                    src="https://pbs.twimg.com/media/GEmJJcqbUAAGq-G?format=jpg&name=small"
-                    alt=""
-                  />
-                </div>
-                <div class="icons flex justify-between mx-3 text-gray-600">
-                  <div class="icon flex items-center justify-center">
-                    <span class="material-symbols-outlined"> chat_bubble </span>
-                    1k
-                  </div>
-                  <div class="icon flex items-center justify-center">
-                    <span class="material-symbols-outlined"> repeat </span>
-                    1k
-                  </div>
-                  <div class="icon flex items-center justify-center">
-                    <span class="material-symbols-outlined"> Favorite </span>
-                    1k
-                  </div>
-                  <div class="icon flex items-center justify-center">
-                    <span class="material-symbols-outlined"> bar_chart </span>
-                    1k
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <hr />
         </div>
       </div>
       <div class="third w-full bg-red-5044 hidden md:block">
@@ -365,7 +369,9 @@
             placeholder="Search"
           />
         </div>
-        <div class="whats m-3 bg-[#16181c] w-1/2 py-5 rounded-xl space-y-3">
+        <div
+          class="whats sticky top-0 m-3 bg-[#16181c] w-1/2 py-5 rounded-xl space-y-3"
+        >
           <h1 class="text-xl font-bold px-3">Whats Happening</h1>
           <div class="item px-4 p-3 hover:bg-gray-800 cursor-pointer">
             <div class="text-sm text-gray-200">Trending in India</div>
@@ -389,7 +395,9 @@
           </div>
         </div>
 
-        <div class="who m-3 bg-[#16181c] w-1/2 py-5 rounded-xl space-y-3">
+        <div
+          class="who m-3 sticky top-[50vh] bg-[#16181c] w-1/2 py-5 rounded-xl space-y-3"
+        >
           <h1 class="text-xl font-bold px-3">Who To Follow</h1>
 
           <div class="item p-3 px-3 space-y-4">
