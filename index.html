@@ -12,8 +12,8 @@
     <link rel="stylesheet" href="./css/output.css" />
   </head>
   <body class="bg-black text-white">
-    <div class="flex container mx-auto my-4">
-      <div class="first w-[70%]">
+    <div class="flex md:container mx-auto my-4">
+      <div class="first w-10 md:w-[70%]">
         <div class="logo invert my-4">
           <svg
             viewBox="0 0 24 24"
@@ -27,82 +27,85 @@
             </g>
           </svg>
         </div>
-        <div class="sidebar flex items-end flex-col">
+        <div class="sidebar flex md:items-end flex-col">
           <!-- <span class="material-symbols-outlined"> add </span> -->
-          <ul class="flex flex-col text-2xl space-y-3 px-11 font-bold">
+          <ul
+            class="flex flex-col text-2xl space-y-3 md:px-11 font-bold w-full"
+          >
             <li
-              class="flex justify-start items-center gap-3 w-fit hover:bg-gray-900 hover:cursor-pointer px-5 py-2 hover:rounded-full"
+              class="flex md:justify-start items-center gap-3 justify-center md:w-fit hover:bg-gray-900 hover:cursor-pointer px-5 py-2 hover:rounded-full"
             >
-              <span class="text-3xl material-symbols-outlined"> home </span>Home
+              <span class="text-3xl material-symbols-outlined"> home </span>
+              <span class="hidden md:block"> Home </span>
             </li>
             <li
-              class="flex justify-start items-center gap-3 w-fit hover:bg-gray-900 hover:cursor-pointer px-5 py-3 hover:rounded-full"
+              class="flex md:justify-start items-center gap-3 justify-center md:w-fit hover:bg-gray-900 hover:cursor-pointer px-5 py-3 hover:rounded-full"
             >
               <span class="text-3xl material-symbols-outlined"> search </span>
-              Explore
+              <span class="hidden md:block">Explore</span>
             </li>
             <li
-              class="flex justify-start items-center gap-3 w-fit hover:bg-gray-900 hover:cursor-pointer px-5 py-3 hover:rounded-full"
+              class="flex md:justify-start items-center gap-3 justify-center md:w-fit hover:bg-gray-900 hover:cursor-pointer px-5 py-3 hover:rounded-full"
             >
               <span class="text-3xl material-symbols-outlined">
                 notifications
               </span>
-              Notifications
+              <span class="hidden md:block">Notifications</span>
             </li>
             <li
-              class="flex justify-start items-center gap-3 w-fit hover:bg-gray-900 hover:cursor-pointer px-5 py-3 hover:rounded-full"
+              class="flex md:justify-start items-center gap-3 justify-center md:w-fit hover:bg-gray-900 hover:cursor-pointer px-5 py-3 hover:rounded-full"
             >
               <span class="text-3xl material-symbols-outlined"> chat </span>
-              Grook
+              <span class="hidden md:block">Grook</span>
             </li>
             <li
-              class="flex justify-start items-center gap-3 w-fit hover:bg-gray-900 hover:cursor-pointer px-5 py-3 hover:rounded-full"
+              class="flex md:justify-start items-center gap-3 justify-center md:w-fit hover:bg-gray-900 hover:cursor-pointer px-5 py-3 hover:rounded-full"
             >
               <span class="text-3xl material-symbols-outlined"> lists </span>
-              Lists
+              <span class="hidden md:block">Lists</span>
             </li>
             <li
-              class="flex justify-start items-center gap-3 w-fit hover:bg-gray-900 hover:cursor-pointer px-5 py-3 hover:rounded-full"
+              class="flex md:justify-start items-center gap-3 justify-center md:w-fit hover:bg-gray-900 hover:cursor-pointer px-5 py-3 hover:rounded-full"
             >
               <span class="text-3xl material-symbols-outlined">
                 <span class="material-symbols-outlined"> bookmark </span>
               </span>
-              Bookmarks
+              <span class="hidden md:block">Bookmarks</span>
             </li>
             <li
-              class="flex justify-start items-center gap-3 w-fit hover:bg-gray-900 hover:cursor-pointer px-5 py-3 hover:rounded-full"
+              class="flex md:justify-start items-center gap-3 justify-center md:w-fit hover:bg-gray-900 hover:cursor-pointer px-5 py-3 hover:rounded-full"
             >
               <span class="text-3xl material-symbols-outlined">
                 communities
               </span>
-              Communities
+              <span class="hidden md:block">Communities</span>
             </li>
             <li
-              class="flex justify-start items-center gap-3 w-fit hover:bg-gray-900 hover:cursor-pointer px-5 py-3 hover:rounded-full"
+              class="flex md:justify-start items-center gap-3 justify-center md:w-fit hover:bg-gray-900 hover:cursor-pointer px-5 py-3 hover:rounded-full"
             >
               <span class="text-3xl material-symbols-outlined">
                 workspace_premium
               </span>
-              Premium
+              <span class="hidden md:block">Premium</span>
             </li>
             <li
-              class="flex justify-start items-center gap-3 w-fit hover:bg-gray-900 hover:cursor-pointer px-5 py-3 hover:rounded-full"
+              class="flex md:justify-start items-center gap-3 justify-center md:w-fit hover:bg-gray-900 hover:cursor-pointer px-5 py-3 hover:rounded-full"
             >
               <span class="text-3xl material-symbols-outlined"> person </span>
-              Profile
+              <span class="hidden md:block">Profile</span>
             </li>
             <li
-              class="flex justify-start items-center gap-3 w-fit hover:bg-gray-900 hover:cursor-pointer px-5 py-3 hover:rounded-full"
+              class="flex md:justify-start items-center gap-3 justify-center md:w-fit hover:bg-gray-900 hover:cursor-pointer px-5 py-3 hover:rounded-full"
             >
               <span class="text-3xl material-symbols-outlined"> more </span>
-              More
+              <span class="hidden md:block">More</span>
             </li>
             <li>
               <div class="button w-full text-center my-4">
                 <button
                   class="bg-blue-600 px-20 text-xl rounded-full py-3 text-white"
                 >
-                  Post
+                  <span class="hidden md:block">Post</span>
                 </button>
               </div>
             </li>
